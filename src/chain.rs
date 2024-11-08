@@ -140,7 +140,7 @@ pub fn bitcoin_genesis_hash(network: Network) -> bitcoin::BlockHash {
         static ref TESTNET_GENESIS: bitcoin::BlockHash =
             genesis_block(BNetwork::Testnet).block_hash();
         static ref TESTNET4_GENESIS: bitcoin::BlockHash = bitcoin::BlockHash::from_str(
-            "00000000da84f2bafbbc53dee25a72ae507ff4914b867c565be350b0da8bf043"
+            "9b7bce58999062b63bfb18586813c42491fa32f4591d8d3043cb4fa9e551541b"
         )
         .unwrap();
         static ref REGTEST_GENESIS: bitcoin::BlockHash =
@@ -168,7 +168,7 @@ pub fn bitcoin_genesis_hash(network: Network) -> bitcoin::BlockHash {
 pub fn liquid_genesis_hash(network: Network) -> elements::BlockHash {
     lazy_static! {
         static ref LIQUID_GENESIS: BlockHash =
-            "1466275836220db2944ca059a3a10ef6fd2ea684b0688d2c379296888a206003"
+            "9b7bce58999062b63bfb18586813c42491fa32f4591d8d3043cb4fa9e551541b"
                 .parse()
                 .unwrap();
     }
