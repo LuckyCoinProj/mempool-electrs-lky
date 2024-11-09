@@ -105,10 +105,6 @@ pub struct BlockchainInfo {
     pub initialblockdownload: Option<bool>,
 }
 
-#[derive(Serialize, Deserialize, Debug)]
-pub struct MempoolInfo {
-    pub loaded: bool,
-}
 
 #[derive(Serialize, Deserialize, Debug)]
 struct NetworkInfo {
@@ -378,7 +374,7 @@ impl Daemon {
                 !info.initialblockdownload.unwrap_or(false)
             };
 
-            if mempool.loaded && ibd_done && info.blocks == info.headers {
+            if ibd_done && info.blocks == info.headers {
                 break;
             }
 
@@ -387,7 +383,7 @@ impl Daemon {
                 info.blocks,
                 info.headers,
                 info.verificationprogress * 100.0,
-                mempool.loaded
+                true
             );
             signal.wait(Duration::from_secs(5), false)?;
         }
