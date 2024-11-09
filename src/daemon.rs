@@ -105,7 +105,14 @@ pub struct BlockchainInfo {
     pub initialblockdownload: Option<bool>,
 }
 
-
+#[derive(Serialize, Deserialize, Debug)]
+struct MempoolInfo {
+    size: u32,
+    bytes: u64,
+    usage: u64,
+    maxmempool: u64,
+    mempoolminfee: f64,
+}
 #[derive(Serialize, Deserialize, Debug)]
 struct NetworkInfo {
     version: u64,
