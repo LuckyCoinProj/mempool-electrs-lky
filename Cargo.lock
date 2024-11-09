@@ -155,6 +155,17 @@ dependencies = [
 ]
 
 [[package]]
+name = "bitcoin"
+version = "0.28.0"
+source = "git+https://github.com/LuckyCoinProj/rust-bitcoin-v28-lky?rev=093945d69906c6312e66f685be7dc3350769a5bd#093945d69906c6312e66f685be7dc3350769a5bd"
+dependencies = [
+ "bech32",
+ "bitcoin_hashes 0.10.0",
+ "secp256k1 0.22.1",
+ "serde",
+]
+
+[[package]]
 name = "bitcoin_hashes"
 version = "0.7.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -418,7 +429,7 @@ version = "0.19.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "61c5ef61d480567b862631efcc22f704eeed7291dbf929ae008a8d5b7f5c4527"
 dependencies = [
- "bitcoin 0.28.0",
+ "bitcoin 0.28.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "bitcoin_hashes 0.10.0",
  "secp256k1-zkp",
  "serde",
@@ -827,7 +838,7 @@ dependencies = [
  "arrayref",
  "base64 0.13.0",
  "bincode",
- "bitcoin 0.28.0",
+ "bitcoin 0.28.0 (git+https://github.com/LuckyCoinProj/rust-bitcoin-v28-lky?rev=093945d69906c6312e66f685be7dc3350769a5bd)",
  "bounded-vec-deque",
  "clap",
  "crossbeam-channel",
