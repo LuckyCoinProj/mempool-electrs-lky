@@ -157,7 +157,7 @@ dependencies = [
 [[package]]
 name = "bitcoin"
 version = "0.28.0"
-source = "git+https://github.com/LuckyCoinProj/rust-bitcoin-v28-lky?rev=093945d69906c6312e66f685be7dc3350769a5bd#093945d69906c6312e66f685be7dc3350769a5bd"
+source = "git+https://github.com/LuckyCoinProj/rust-bitcoin-v28-lky?rev=40f79e8fb11f0fcd3dd440ccd8d2af4259e77fd3#40f79e8fb11f0fcd3dd440ccd8d2af4259e77fd3"
 dependencies = [
  "bech32",
  "bitcoin_hashes 0.10.0",
@@ -838,7 +838,7 @@ dependencies = [
  "arrayref",
  "base64 0.13.0",
  "bincode",
- "bitcoin 0.28.0 (git+https://github.com/LuckyCoinProj/rust-bitcoin-v28-lky?rev=093945d69906c6312e66f685be7dc3350769a5bd)",
+ "bitcoin 0.28.0 (git+https://github.com/LuckyCoinProj/rust-bitcoin-v28-lky?rev=40f79e8fb11f0fcd3dd440ccd8d2af4259e77fd3)",
  "bounded-vec-deque",
  "clap",
  "crossbeam-channel",
